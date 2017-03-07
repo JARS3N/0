@@ -1,4 +1,4 @@
-autoUpdate<-function(pack){
+autoUp<-function(pack){
   testUrl <- function(url) {
     out <- tryCatch(
       {
