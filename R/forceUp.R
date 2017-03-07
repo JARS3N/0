@@ -1,6 +1,6 @@
 forceUp<-function(){
-pkg<-deparse(sys.call()[[1]]) 
-pkginfo<-packageDescription(pkg)$.packageName
+pkg<-environment(deparse(sys.call()[[1]]))$.packageName
+pkginfo<-packageDescription(pkg)
 repo<-file.path(pkginfo$GithubUsername,pkginfo$GithubRepo)
 devtools::install_github(repo,force=TRUE)
 }
