@@ -1,8 +1,7 @@
 forceUp<-function(){
-  require(magrittr)
-  deparse(sys.call()[[1]]) %>% 
- environment(fun=.) %>% 
- packageDescription(.) #%>% 
- # file.path(.$GithubUsername,.$GithubRepo) #%>% 
+prse<-  deparse(sys.call()[[1]]) 
+ pkg<-environment(fun=prse)  
+ info<-packageDescription(pkg) 
+ file.path(info$GithubUsername,info$GithubRepo) 
   #devtools::install_github(repo=.,force=TRUE)
 }
