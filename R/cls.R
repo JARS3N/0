@@ -7,5 +7,5 @@ cls <- function() {
   gc()  #collect garbage
     .rs.restartR() #clear session
   cat("\014") #clear repl
-  message("now daisy fresh!")
+  message("REPL cleared.")
 }
