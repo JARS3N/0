@@ -1,3 +1,3 @@
 forceUp<-function(){
-environment(fun=deparse(sys.call()[[1]])) 
+deparse(sys.call()[[1]]) 
 }
