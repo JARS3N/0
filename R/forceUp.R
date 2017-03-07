@@ -1,4 +1,9 @@
 forceUp<-function(){
-parse<-deparse(sys.call()[[1]]) 
-strsplit(parse,"::")[[1]][1]
+  require(magrittr)
+  sys.call()[[1]] %>% 
+  deparse(.) %>% 
+  environment(fun=.) %>% 
+  packageDescription(.) %>% 
+  file.path(.$GithubUsername,.$GithubRepo) %>% 
+  devtools::install_github(repo=.,force=TRUE)
 }
