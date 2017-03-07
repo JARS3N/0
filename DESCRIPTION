@@ -1,0 +1,13 @@
+Package: halp
+Type: Package
+Title: test
+Version: 0
+Date: 2016-06-21
+Author: J.Arsenault
+Maintainer: Who to complain to <JARS3N@GMAIL.COM>
+Description: compile some little things that I find useful,will add more later.
+URL: https://github.com/JARS3N/0
+Imports:
+        magrittr
+License: none
+LazyData: TRUE
