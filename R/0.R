@@ -1,4 +1,4 @@
-autoUpGithub<-function(pack){
+autoUpdate<-function(pack){
   testUrl <- function(url) {
     out <- tryCatch(
       {
