@@ -7,7 +7,7 @@ devtools::install_github(repo,force=TRUE)
 
 
 forceUp2<-function(){
-  require(magritter)
+  require(magrittr)
 deparse(sys.call()[[1]]) %>%
 strsplit(call,"::")[[1]][1]%>%
 packageDescription(.)%>%
