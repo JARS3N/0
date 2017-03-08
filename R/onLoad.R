@@ -1,3 +1,3 @@
 .onLoad <- function(libname = find.package("x0"), pkgname = "x0") {
-  autoUp()
+  autoUp("x0")
 }
