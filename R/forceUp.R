@@ -18,3 +18,10 @@ gsub("[:]{2}[a-z,A-Z,0-9]+","",.)
 #file.path(.$GithubUsername,.$GithubRepo)#%>%
 #list(pkg=pkg,pkginfo=pkginfo,repo=repo)
 }
+
+
+
+forceUp3<-function(){
+require(magrittr)
+gsub("[:]{2}[a-z,A-Z,0-9]+","",deparse(sys.call()[[1]]))
+}
