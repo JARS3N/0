@@ -24,6 +24,5 @@ gsub("[:]{2}[a-z,A-Z,0-9]+","",.)
 forceUp3<-function(){
 require(magrittr)
 gsub("[:]{2}[A-Z|a-z|0-9]+","",deparse(sys.call()[[1]])) %>%
-packageDescription(.) %>%
-file.path(.$GithubUsername,.$GithubRepo) 
+packageDescription(.)  
 }
