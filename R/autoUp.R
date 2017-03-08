@@ -1,4 +1,5 @@
-autoUp<-function(pack){
+autoUp<-function(){
+  pack<-gsub("[:]{2}[A-Z|a-z|0-9]+","",deparse(sys.call()[[1]]))
   testUrl <- function(url) {
     out <- tryCatch(
       {
