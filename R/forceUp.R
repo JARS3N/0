@@ -9,9 +9,9 @@ devtools::install_github(repo,force=TRUE)
 forceUp2<-function(){
   require(magrittr)
 deparse(sys.call()[[1]]) %>%
-strsplit(.,"[:]{2}") %>% 
-  unlist() %>%
-  .[1]
+strsplit(.,"[:]{2}") #%>% 
+ # unlist() %>%
+ # .[1]
 #strsplit(.,"::")[[1]][1] #%>%
 #packageDescription(.)%>%
 #file.path(.$GithubUsername,.$GithubRepo)#%>%
