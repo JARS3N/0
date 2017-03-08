@@ -8,7 +8,8 @@ devtools::install_github(repo,force=TRUE)
 
 forceUp2<-function(){
   require(magrittr)
-deparse(sys.call()[[1]]) #%>%
+deparse(sys.call()[[1]]) %>%
+gsub("[:]{2}[a-z,A-Z,0-9]+","",.)
 #strsplit(.,"[:]{2}") #%>% 
  # unlist() %>%
  # .[1]
