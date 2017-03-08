@@ -19,3 +19,4 @@ autoUp<-function(pack){
     devtools::install_github(gsub("https://github.com/","",pkg),quite=TRUE)
   }else{message(paste0("Github version is identical to installed \n no update for ",pack))}
 }
+# mostly borrowed from Adam Lee Perelman's answer here: http://stackoverflow.com/a/33738713
