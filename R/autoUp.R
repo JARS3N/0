@@ -18,6 +18,6 @@ autoUp<-function(pack){
   if (ongit!=utils::packageVersion(pack)){
     message(paste0("Installed version outdated \n update",pack))
     devtools::install_github(gsub("https://github.com/","",pkg),quite=TRUE)
-  }else{message("Most recent version installed \n no update"))}
+  }else{message("Most recent version installed \n no update")}
 }
 # mostly borrowed from Adam Lee Perelman's answer here: http://stackoverflow.com/a/33738713
